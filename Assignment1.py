@@ -1,4 +1,4 @@
-# Importing libraries
+#Importing libraries
 import numpy as np
 import matplotlib.pyplot as mp
 
@@ -14,14 +14,28 @@ mp.title('Sine Function', fontweight=12)
 mp.axhline(y=0, color='black', linestyle='-')
 mp.show()
 
-# Creating data structure for Sine
+# Creating data structure for Cosine
 X = np.linspace(0, 2*np.pi, 100)
 Y = np.cos(X)
+
 
 # Plotting Cosine graph
 mp.plot(X, Y, linewidth=3, color='r')
 mp.xlabel('x', fontweight=12)
 mp.ylabel(r'$\cos(x)$', fontweight=12)
 mp.title('Cosine Function', fontweight=12)
+mp.axhline(y=0, color='black', linestyle='-')
+mp.show()
+
+# Creating data structure for Tangent function
+A = np.linspace(0, 2*np.pi, 100)
+B = np.tan(A)
+
+
+# Plotting Tangent graph
+mp.plot(A, B, linewidth=3, color='r')
+mp.xlabel('x', fontweight=12)
+mp.ylabel(r'$\tan(x)$', fontweight=12)
+mp.title('Tangent Function', fontweight=12)
 mp.axhline(y=0, color='black', linestyle='-')
 mp.show()
